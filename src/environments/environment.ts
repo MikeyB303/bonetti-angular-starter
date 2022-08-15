@@ -2,8 +2,14 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 
+import { LogLevel } from 'src/app/core/enums/log-level';
+
 export const environment = {
-  production: false
+  production: false,
+  logging: {
+    level: LogLevel.All,
+    logWithDate: true,
+  },
 };
 
 /*
